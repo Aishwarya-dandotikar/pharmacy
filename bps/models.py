@@ -1,5 +1,5 @@
 import pymysql as db 
-
+re
 host = "localhost"
 user = "Project"
 password = "password"
@@ -50,4 +50,5 @@ for tableName in tableNames:
 	cursor.execute(tableName)
 	connection.commit()
 		
+print("tables successfully created")
 # "INSERT INTO admin VALUES ('15531','NANDA KISHORE','SIVARAJU','NK732100@GMAIL.COM','NANDU141');"

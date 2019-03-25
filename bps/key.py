@@ -34,9 +34,9 @@ cursor = connection.cursor()
 # cursor.execute(entry)
 
 # INSERTING A DEFAULT ADMIN VALUES INTO THE DATABASE
-# password = generate_password_hash('admin')
-# cursor.execute("INSERT INTO admin VALUES ('521' , 'admin' , 'baskar pharmacy', 'admin@baskar.com' , %s)",password)
-# connection.commit()
+password = generate_password_hash('admin')
+cursor.execute("INSERT INTO admin VALUES ('521' , 'admin' , 'baskar pharmacy', 'admin@baskar.com' , %s)",password)
+connection.commit()
 
 
 # cursor.execute("SELECT PASSWORD_HASH,FIRSTNAME FROM admin")
